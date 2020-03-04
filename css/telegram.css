@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+nav{
+    width: 1285px;
+    height: 45px;
+}
+div.container{
+    width: 980px;
+}
+div.container ul.menu{
+margin-left: 75px;
+}
+div.container ul.menu li{
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+    line-height: 45px;
+}
+div.container ul.menu li a{
+    text-decoration: none;
+    color: #0088cc;
+    font-family: 'Roboto', sans-serif;
+}
+.active{
+    border-bottom: 2px solid #0088cc;
+}
+div.container ul.menu li a:hover{
+    border-bottom: 2px solid #0088cc;
+    
+}
+div.container ul.menu li.f-ri{
+    float: right;
+    margin-left: 20px;
+}
+.f-ri{
+    float: right;
+}
+
+div.left{
+    margin-top: 15px;
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding-left: 40px;
+    height: 350px;
+}
+div.right{
+    margin-top: 15px;
+    width: 50%;
+    float: left;
+    height: 350px;
+
+    border-left: 2px solid #0088cc;
+}
+ div.child-1{
+	width: 70%;
+	height: 350px;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+}
+div.child-2{
+	width: 30%;
+	height: 350px;
+    float: left;
+    margin-top: 20px;
+    
+}
+div.child-2 div.content{
+    border-left: 5px solid #0088cc;
+    padding-left: 20px;
+    color: #0088cc;
+    width: 150px;
+}
+div.child-2 div.content h5{
+    padding-top: 5px;
+    color: black;
+}
+div.child-2 div.content a{
+    text-decoration: none;
+    color: #0088cc;
+}
+div.child-1 div.content-1{
+    padding-left: 240px;
+}
+div.child-3{
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 30px;
+}
+div.child-3 div.col-1{
+    width: 30%;
+    height: 350px;
+    float: left;
+    background-image: url('../images/SiteAndroid.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.child-3 div.col-1 h3{
+    color: #0088cc;
+    padding-top: 290px;
+    text-align: center;
+}
+div.child-3 div.col-1:hover{
+    border-bottom: 3px solid #0088cc;
+}
+div.child-3 div.col-2{
+    width: 30%;
+    height: 350px;
+    float: left;
+}
+div.child-3 div.col-2{
+    width: 30%;
+    height: 350px;
+    float: left;
+    background-image: url('../images/SiteiOs.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.child-3 div.col-2 h3{
+    color: #0088cc;
+    padding-top: 290px;
+    text-align: center;
+}
+div.child-3 div.col-2:hover{
+    border-bottom: 3px solid #0088cc;
+}
+div.child-3 div.col-3{
+    width: 30%;
+    height: 350px;
+    float: left;
+}
+div.child-3 div.col-3{
+    width: 40%;
+    height: 350px;
+    float: left;
+    background-image: url('../images/SiteWP.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.child-3 div.col-3 h3{
+    color: #0088cc;
+    padding-top: 290px;
+    text-align: center;
+}
+div.child-3 div.col-3:hover{
+    border-bottom: 3px solid #0088cc;
+}
+div.child-4{
+    width:595px;
+    margin: 0 auto;
+    text-align: center;
+    color: #0088cc;
+}
+div.child-4 h4{
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+div.child-4 div.content-3 {
+    width: 50%;
+	height: 350px;
+    float: left;
+}
+div.child-4 div.content-4{
+    width: 50%;
+	height: 350px;
+    float: left;
+}
+div.child-5{
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    /* color: #0088cc; */
+    padding-left: 130px;
+    padding-right: 50px;
+}
+div.child-5 h4{
+    color: #A19679;
+    font-size: 28px;
+}
+div.child-5 div.content-5{
+    width: 30%;
+	height: 852px;
+    float: left;
+    width: 260px;
+    padding-right: 35px;
+}
+div.child-5 div.content-6{
+    width: 30%;
+	height: 852px;
+    float: left;
+    width: 260px;
+    padding-right: 35px;
+    
+}
+div.child-5 div.content-7{
+    width: 40%;
+	height: 852px;
+    float: left;
+    width: 260px;
+    padding-right: 20px;
+    
+}
+div.footter{
+   margin: 0 auto;
+    text-align: center;
+    background: green;
+    padding-left: 130px;
+    padding-right: 50px;   
+}

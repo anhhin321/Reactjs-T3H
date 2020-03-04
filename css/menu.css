@@ -1,0 +1,51 @@
+nav{
+	width: 200px;
+	margin:10px auto;
+	background: #4267B2;
+}
+nav ul.menu li{
+	list-style: none;
+	border-bottom: 1px solid white;
+	padding: 5px 0px;
+	position: relative;
+}
+nav ul.menu li:last-child{
+	border: none;
+}
+nav ul.menu li a{
+	text-decoration: none;
+	color: blue;
+	font-size: 20px;
+}
+nav ul.menu li:hover{
+	background: green;
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+nav ul.menu li ul.drop-down{
+	display: none;
+	width: 200px;
+	position: absolute;
+	background: green;
+	left: 160px;
+	top: 0px;
+}
+nav ul.menu li:hover > a {
+  color: red;
+}
+nav ul.menu li:hover ul.drop-down{
+	display: block;
+}
+.facebook{
+	background: #4267B2;
+	/* margin: 0 0 0 0;
+top:0
+right:0
+bottom: 0
+left: 0;
+	*/
+	width: 1285px;
+	height: 43px;
+	position: fixed;
+}*

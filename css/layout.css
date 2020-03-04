@@ -1,0 +1,125 @@
+*{
+    /*reset trình duyệt*/
+    margin: 0; padding: 0;}
+/* html selector tìm tất cả các thẻ h1 trong văn bản html đổi màu xanh*/
+h1.title{color: green;}
+/* class selector */
+.title{color: blue;}
+/* id selector ưu tiên hơn*/
+/* #myTitle{color: yellow;} */
+/* attr selector*/
+input[type="number"]{
+    border: 1px solid red;
+}
+input[type]{
+    border: 1px solid blue;
+}
+input[class~="password"]{
+    border: 1px solid yellow;
+}
+input[class*="us"]{
+    border: 1px solid pink;
+}
+input[class^="us"]{
+    border: 1px solid green;/* thuộc tính bắt đầu từ gtri bên trái sang*/
+}
+h1[name|="title"]{
+    color: red;
+    font-size: 30px;
+}
+/*selector phan câp*/
+div.content> div.box {
+    width: 300px;
+    height: 300px;
+    background: blue;
+} 
+div.content h5{
+    color: red;
+}
+div.content + div.content-2{
+    width: 300px;
+    height: 300px;
+    background: green;
+}
+div.content ~ div.content-3{
+    border-top: 1px solid red ;
+    width: 300px;
+    height: 300px;
+    background: green;
+}
+div.parent > div.child-1 +div.child-2 > div.child-3 ~div.child-4 + div.child-5 h1.test{
+    color: red;
+}
+div.pesudo :first-child{
+    color: red;
+}
+div.pesudo :first-of-type{
+    color: blueviolet;
+}
+div.pesudo :last-child{
+    color: brown;
+}
+div.pesudo :last-of-type{
+    color: yellow;
+}
+div.pesudo :nth-last-child(3){
+    color: violet; /*tính từ thằng con cuối cùng*/
+}
+div.pesudo :nth-last-of-type(3){
+    color: pink; /* ở vị trí thứ 3 của thẻ cùng loại*/
+}
+div.pesudo :nth-child(2){
+    color: darkblue;/* tính từ vị trí sô 1 đếm xuống*/
+}
+div.pesudo :nth-of-type(2){
+    color: darkgreen;/* ở vị trí số 2 của thẻ cùng loại*/
+}
+div.only-child :only-child{
+    color: red;
+}
+div.input-group input[name="user"]:focus{
+    width: 200px;
+    height: 45px;
+    border: 3px solid red;
+}
+input[name="gender"]:checked{
+    width: 150px;
+    height: 50px;
+}
+input[class="checkRadio"]:checked{
+    width: 150px;
+    height: 50px;
+}
+div.input-group a:visited{
+    color: red;
+}
+div.input-group a:link{
+    color: violet;
+}
+div.input-group a:active{
+    color: yellow;
+}
+div.input-group a:hover{
+    text-decoration: none;
+    font-size: 30px;
+    color: green;
+}
+div.psudo-element p:hover{
+    font-size: 30px;
+}
+div.psudo-element p::first-letter{
+    color: red;
+    font-size: large;/* tác động vào chữ cái đầu tiên*/
+}
+div.psudo-element p::first-line{
+    color: green;
+}
+div.psudo-element p::before{
+    content: 'hello';
+}
+div.psudo-element p::after{
+    content: url('../images/icon.png');
+}
+div.psudo-element p::selection{
+    color:red;
+}

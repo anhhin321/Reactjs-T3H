@@ -1,0 +1,72 @@
+div.box{
+	width: 200px;
+	height: 100px;
+	border: 1px solid red;
+	/*overflow: hidden;*/
+	/*overflow: scroll;*/
+	overflow: auto;
+}
+div.container{
+	width: 980px;
+	margin: auto;
+	border: 1px solid red;
+}
+div.container div.child-1{
+	width: 50%;
+	background: yellow;
+	height: 350px;
+	float: left;
+}
+div.container div.child-2{
+	width: 50%;
+	background: blue;
+	height: 350px;
+	float: left;
+}
+/*responsive*/
+@media only screen and (min-width: 375px) and (max-width: 667px){
+	div.container div.child-1{
+	background: brown;
+	width: 100%;
+	float: none;
+
+}
+div.container div.child-1 img.img{
+	overflow: hidden;
+}
+	div.container div.child-2{
+	background: green;
+	width: 100%;
+	float: none;
+}
+div.container div.child-2 img.img{
+	overflow: hidden;
+}
+}
+div.content{
+	width: 350px;
+	height: 350px;
+	background: linear-gradient(to top right, yellow, blue, green, red);
+	transition: all 10s ease 0s;
+	animation: myanimation 1s ease 0s infinite alternate;
+	position: relative;
+}
+@keyframes myanimation{
+	from {left: 0px;}
+	to {left:200px;}
+}
+div.content:hover{
+	transform: rotate(45deg);
+	opacity: 0;
+	border-radius: 50%;
+}
+div.ct2{
+	width:200px;
+	height: 200px;
+	border: 1px solid red;
+}
+div.ct2 p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

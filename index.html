@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React js</title>
+    <meta name="author" content="Nguyễn Khắc Anh">
+    <meta name="keyword" content="học lập trình, reactjs, font-end">
+    <meta name="description" content="blog học lập trình, chia sẻ kinh nghiệm lập trình">
+    <noscript>Vui lòng cho phép mở js</noscript>
+    <!-- liên kết file css từ bên ngoài-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- icon trên tiêu đề,hình ảnh cỡ 60X60 -->
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <style>
+    /* code css ở đây*/
+
+    </style>
+</head>
+<body>
+    <!--<header></header> tạo header
+    <article></article>
+    <section></section>
+    <aside></aside>
+    <footer></footer>
+ <nav></nav>
+-->
+<!-- các thẻ html làm việc vs văn bản + tiêu đề + định dạng văn bản -->
+<p>Đây là đoạn văn bản: A tool for creating an MD5 hash from a string. Use ... PHP programmers, ASP programmers and anyone developing on MySQL, SQL, Postgress or similar should find this online tool an especially handy resource.</p>
+<h1 id="title">Đây là thẻ tiêu đề: h1->h6</h1>
+<h6>html block hiển thị trên 1 dòng</h6>  
+<b>A tool for creating an MD5 hash from a string</b>
+<p>A tool for creating an <strong>MD5</strong> hash from a string</p> 
+<p><strong>Thẻ strong giúp cho việc seo web</strong>, thẻ b là để in đậm</p>
+<p><i>thẻ i là để <mark> in nghiêng</mark></i></p>
+<p><em>Thẻ em đê seo web</em>, thẻ i là in nghiêng</p>
+<p><u> Gạch chân bằng thẻ u</u>,<del>thẻ del giúp gạch ngang</del></p>
+<p>Thuộc tính id trong html định dang cho các thẻ</p>
+<!--html liên kết-->
+<a href="https://www.google.com/" title="go to google, đây là giải thích" target="_blank">go to google</a>
+<br>
+<!--neo link-->
+<a href="#title">Go to thẻ h1</a>
+<br>
+<a href="javascript:void(0);">không đi tới đâu</a>
+<!--Html danh sách -->
+<br>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+</ul>
+<ul>
+    <ol><a href="#">Anh nhà ở đâu thế???</a></ol>
+    <ol><a href="#">Anh đang ở đâu đấy anh</a></ol>
+    <ol><a href="#">Anh là ai</a></ol>
+</ul>
+<!--html hiện thị bằng bảng biểu dữ liệu-->
+<table width="100%" border="1" cellspacing="0" cellpadding="0" style="text-align: center;">
+    <thead>
+        <tr>
+            <th>MSSV</th>
+            <th>Họ tên</th>
+            <th>Quê quán</th>
+            <th>Ngày sinh</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Giới tính</th>
+            <th>Học bổng</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>113</td>
+            <td>Công An</td>
+            <td rowspan="2">Hai Duong</td>
+            <td>12/3/2000</td>
+            <td>095422112</td>
+            <td>abc@gmail.com</td>
+            <td>Nam</td>
+            <td>1234432</td>
+        </tr>
+        <tr><td>114</td>
+            <td>Cấp cứu</td>
+            <td>12/3/2000</td>
+            <td>095422112</td>
+            <td>abc@gmail.com</td>
+            <td>Nam</td>
+            <td>1234432</td></tr>
+        <tr><td>115</td>
+            <td>Cứu thưởng</td>
+            <td>Hai Duong</td>
+            <td>12/3/2000</td>
+            <td>095422112</td>
+            <td>abc@gmail.com</td>
+            <td>Nam</td>
+            <td>1234432</td></tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="7">Tổng tiền</td>
+            <td>1234543</td>
+        </tr>
+    </tfoot>
+</table>
+<table width="100%" border="1" style="text-align: center;">
+    <thead>
+        <tr style="background: darkgreen;">
+        <th>thoi gian</th>
+        <th colspan="3" >Trận đấu</th>
+        <th>Trực tiếp</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="5" style="background: forestgreen;">Bóng đá Nam SEA Games 30</td>
+        </tr>
+        <tr>
+            <td>5/12 15:00</td>
+            <td>U22 Brunei</td>
+            <td></td>
+            <td>U22 Singapore</td>
+            <td></td>
+        </tr>
+        <tr>
+                <td>5/12 15:00</td>
+                <td>U22 Brunei</td>
+                <td></td>
+                <td>U22 Singapore</td>
+                <td>VTV2</td>
+            </tr>
+            <tr>
+                    <td>5/12 15:00</td>
+                    <td>U22 Brunei</td>
+                    <td></td>
+                    <td>U22 Singapore</td>
+                    <td>VTV6, VTV5</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Bóng đá Nữ SEA Games</td>
+                </tr>
+                <tr>
+                        <td>5/12 15:00</td>
+                        <td>U22 Brunei</td>
+                        <td></td>
+                        <td>U22 Singapore</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                            <td>5/12 15:00</td>
+                            <td>U22 Brunei</td>
+                            <td></td>
+                            <td>U22 Singapore</td>
+                            <td>VTV6, VTV5</td>
+                        </tr>
+    </tbody>
+</table>
+<!--Html media-->
+<img width="300" height="300" src="images/icon.png" alt="icon" title="icon image">
+<br>
+<video width="300" height="300" src="video/Thêm, sửa, xóa dùng Ajax trong Laravel.mp4" autobuffer autoloop loop controls poster="images/icon.png"></video>
+<br>
+<audio src="video/Thêm, sửa, xóa dùng Ajax trong Laravel.mp4" autobuffer autoloop loop controls></audio>
+<!--html đồ họa-->
+<br>
+<canvas width="300" height="200" style="border: 1px solid red;"></canvas>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZNc1UN0zqVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!--HTML layout-->
+<header>
+    <!--Thông tin cơ bản giới thiệu website-->
+    <!--nằm bên trái-->
+    <div class="logo">
+        <h1>This is logo</h1>
+    </div>
+    <!-- nằm bên phải-->
+    <div class="banner">
+        <h4>this is banner </h4>
+    </div>
+</header>
+<!-- menu -->
+<nav>
+    <!--Tạo link điều hướng-->
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Product</a></li>
+    </ul>
+</nav>
+<!--Tạo nội dung của trang web-->
+<main>
+    <!--Content left-->
+    <section>
+        <article>
+            <h5>This is article</h5>
+        </article>
+        <section>
+            <h5>This is content</h5>
+        </section>
+    </section>
+    <!--Content right-->
+    <aside>
+<h5>This is aside</h5>
+    </aside>
+    <!--Footer-->
+    <footer>
+        <h5>This is footer</h5>
+    </footer>
+</main>
+<br>
+<br>
+<!--HTML Form-->
+<form action="" method="POST">
+    <!--Truyền tải thông tin -->
+    <label for="user">Username</label>
+    <input type="text" id="user" name="user" class="user">
+    <br><br>
+    <label for="pass">password</label>
+    <input type="password" id="pass" name="pass" class="pass">
+    <br><br>
+    <label for="number">Number</label>
+    <input type="number" id="number" name="number" class="number">
+    <br><br>
+    <label for="color">color</label>
+    <input type="color" id="color" name="color" class="color">
+    <br><br>
+    <label for="date">Date</label>
+    <input type="week" id="date" name="number" class="number"><!--type: date, week, month-->
+    <br><br>
+    <label for="birthday">birthday</label>
+    <select name="birthday" id="birthday"><!--multiple chọn nhiều-->
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option selected value="4">4</option><!--Chọn tự động option 4-->
+    </select>
+    <br><br>
+    <label for="nu">nu</label><!--chọn 1 thì thêm name giống nhau, tự động chọn luôn thêm thuộc tính checked-->
+    <input type="radio" id="nu" name="gt">
+    <br><br>
+    <label for="nam">nam</label>
+    <input type="radio" id="nam" name="gt" checked>
+    <br><br>
+    <label for="agree">Vui lòng đồng ý với điều khoản</label>
+    <input type="checkbox" id="agree" name="agree">
+    <br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+    <label for="url">URL</label>
+    <input type="url" id="url" name="url">
+    <br><br>
+    <label for="content">Content</label>
+    <textarea name="content" id="content" cols="50" rows="5"></textarea>
+    <br><br>
+    <button type="button">Click me</button>
+    <button type="submit">click me 2</button>
+
+</form>
+</body>
+</html>
